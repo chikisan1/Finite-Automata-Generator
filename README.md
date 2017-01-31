@@ -1,1 +1,1 @@
-# Finite-Automita-Generator-
+# Finite-Automata-Generator
