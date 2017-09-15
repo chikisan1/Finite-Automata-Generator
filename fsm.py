@@ -1,16 +1,9 @@
 import pygame
 import random
-<<<<<<< HEAD
 from math import pi
-import math
-=======
->>>>>>> 38d9068d78e477c9f610135aa6f0f942422323fa
-
 
 background_colour = (255,255,255)
 (width, height) = (800, 600)
-<<<<<<< HEAD
-
 
 #colors
 black = (0,0,0)
@@ -19,9 +12,6 @@ red = (0,255,0)
 
 ivory = (238,233,233)
 
-=======
- 
->>>>>>> 38d9068d78e477c9f610135aa6f0f942422323fa
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Tutorial 1')
 screen.fill(background_colour)
@@ -29,19 +19,15 @@ screen.fill(background_colour)
 pygame.display.flip()
 clock = pygame.time.Clock()
 
-<<<<<<< HEAD
 circleCounter = 0
 
 #position of the first circle
 centerX = 200
 centerY = 200
-=======
->>>>>>> 38d9068d78e477c9f610135aa6f0f942422323fa
 
 face = pygame.Surface((5, 5))
 
 running = True
-<<<<<<< HEAD
 def circleButton(cx, cy):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
@@ -89,15 +75,12 @@ def text_objects(text, font):
   return textSurface, textSurface.get_rect()
 
 pygame.init()
-=======
->>>>>>> 38d9068d78e477c9f610135aa6f0f942422323fa
 
 while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
 
-<<<<<<< HEAD
   button("Circle", 150, 450, 100, 50, red, green, "Circle")
   button("Line", 550, 450, 100, 50, red, green, "Line")
   mouse = pygame.mouse.get_pos()
@@ -105,9 +88,7 @@ while running:
 
   pygame.display.update()
   clock.tick(15)
-=======
   mouse = pygame.mouse.get_pos()
-
 
   if 150+100 > mouse[0] > 150 and 450+50 > mouse[1] > 450:
 	pygame.draw.rect(screen, (200,0,0),(150,450,100,50))
@@ -118,4 +99,3 @@ while running:
   
   pygame.display.update()
   clock.tick(15)
->>>>>>> 38d9068d78e477c9f610135aa6f0f942422323fa
